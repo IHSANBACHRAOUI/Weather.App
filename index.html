@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+  <title>weather</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="card1">
+      <div class="search">
+        <input type="text" placeholder="enter city name" spellcheck="false">
+        <button><img src="images/Search-bar.png" /></button>
+      </div>
+      <div class="weather">
+        <img src="" class="weather-icon">
+        <div class="date1" id="date"></div>
+        <h1 class="temp" id="tempu"></h1>
+        <h2 class="City" id="city1"></h2>
+        <div class="details">
+          <div class="col1">
+            <img src="images/Wave.png" class="weather-icon">
+            <p class="humidity" id="humd"></p>
+            <p>humidity</p>
+          </div>
+          <div class="col2">
+            <img src="images/Hurricane.png" class="weather-icon">
+            <p class="wind">15 km/h</p>
+            <p>wind speed</p>
+          </div>
+        </div>
+        <div id="dayun1">      
+        </div>
+      </div>
+    </div>
+   
+    
+  </div>
+  <div>
+  <canvas id="myChart" style="width:100%;max-width:700px"></canvas>
+  
+  </div>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>
